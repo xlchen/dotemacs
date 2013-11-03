@@ -1,5 +1,5 @@
 ;; load path prefix, set by install.sh
-(setq xlchen-load-path-prefix "~/dotemacs")
+(setq xlchen-load-path-prefix "~/.emacs.d")
 
 (add-to-list 'load-path xlchen-load-path-prefix)
 (add-to-list 'load-path (concat xlchen-load-path-prefix  "/site-lisp/"))

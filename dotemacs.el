@@ -1,5 +1,8 @@
-(add-to-list 'load-path "~/.emacs.d/")
-(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+;; load path prefix, set by install.sh
+(setq xlchen-load-path-prefix "~/dotemacs")
+
+(add-to-list 'load-path xlchen-load-path-prefix)
+(add-to-list 'load-path (concat xlchen-load-path-prefix  "/site-lisp/"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

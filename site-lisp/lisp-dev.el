@@ -14,7 +14,7 @@
 (add-hook 'lisp-mode-hook 
 	  '(lambda ()
 	     (slime-mode t)
-	     (make-auto-pair ("(" "\"" "{" "[") 'self-insert-or-pair)
+;	     (make-auto-pair ("(" "\"" "{" "[") 'self-insert-or-pair)
 	     (local-set-key [(kbd "C-c C-q")] 'slime-close-all-parens-in-sexp)))
 
 (add-hook 'inferior-lisp-mode-hook 
@@ -24,7 +24,7 @@
 	     (local-set-key [(control c) (control q)] 'slime-close-all-parens-in-sexp)))
 
 (defun my-slime-repl-mode-hook ()
-  (make-auto-pair ("(" "\"" "{" "[") 'self-insert-or-pair)
+;  (make-auto-pair ("(" "\"" "{" "[") 'self-insert-or-pair)
   (local-set-key [(control c) (control q)] 'slime-close-all-parens-in-sexp))
 
 (add-hook 'slime-repl-mode-hook
